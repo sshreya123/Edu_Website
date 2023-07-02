@@ -1,0 +1,211 @@
+.header .content-achievement {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    width: fit-content;
+    padding: 4rem;
+}
+
+.header .content-achievement .header-left {
+    flex-basis: 44%;
+}
+
+.header .content-achievement .header-left h1 {
+    margin-bottom: 2rem;
+}
+
+.header .content-achievement .header-right {
+    flex-basis: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.header .content-achievement .header-right>div {
+    background: rgb(59, 49, 126);
+    margin: 0.5rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    text-align: center;
+    width: 11rem;
+}
+
+.header .content-achievement .header-right>div h2 {
+    margin: 0.8rem 0;
+}
+
+.header .content-achievement .header-right .achievement-card .fa-video-camera {
+    background: crimson;
+    width: 4rem;
+    height: 4rem;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    padding-top: 1rem;
+}
+
+.header .content-achievement .header-right .achievement-card .fa-users {
+    background: rgb(2, 180, 47);
+    width: 4rem;
+    height: 4rem;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    padding-top: 1rem;
+}
+
+.header .content-achievement .header-right .achievement-card .fa-trophy {
+    background: rgb(20, 157, 220);
+    width: 4rem;
+    height: 4rem;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    padding-top: 1rem;
+}
+
+/*--==========================
+     team Section 
+============================-->*/
+.team {
+    position: relative;
+    text-align: center;
+    align-items: center;
+    margin: 3rem auto;
+}
+
+.team .container {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    text-align: center;
+    align-items: center;
+    overflow: hidden;
+    gap: 2.7rem;
+
+}
+
+.team .container .team-card {
+    position: relative;
+    height: 20rem;
+    overflow: hidden;
+    border-radius: 10px;
+    padding: 2rem 0rem;
+    ;
+    background: #314286;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.team .container .team-card:hover img {
+    filter: saturate(1);
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    -webkit-filter: saturate(1);
+}
+
+.team .container .team-card:hover .team-social {
+    right: 0;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+}
+
+.team .container .team-card img {
+    width: 11rem;
+    height: 11rem;
+    border-radius: 10px;
+    filter: saturate(0);
+    -webkit-filter: saturate(0);
+}
+
+.team .container .team-card h4 {
+    margin: 10px 0;
+}
+
+.team .container .team-card .team-social {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    right: -30%;
+    top: 20%;
+    background: #5d78e0;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+
+}
+
+.team .container .team-card .team-social i {
+    padding: 0.7rem;
+    color: white;
+}
+
+/*=================
+    MEDIA QUERIES
+===================*/
+@media screen and (max-width:1024px) {
+
+    .container {
+        width: 90%;
+    }
+
+    .header .content-achievement {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+        padding: 4rem;
+        flex-direction: column;
+        width: 84%;
+    }
+
+    .header .content-achievement .header-left {
+        margin: 3rem 0 .7rem 0;
+    }
+
+    .header .content-achievement .header-left h1 {
+        margin-bottom: 0rem;
+    }
+
+    /*--------team-section------*/
+    .team .container {
+        grid-template-columns: 1fr 1fr 1fr;
+        overflow: hidden;
+        gap: .4rem;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .container {
+        width: 96%;
+    }
+
+    .header .content-achievement .header-right {
+        display: grid;
+       grid-template-columns: 1fr 1fr;
+    }    
+
+    .team .container {
+        grid-template-columns: 1fr 1fr;
+        overflow: hidden;
+        gap: .3rem;
+    }
+}
